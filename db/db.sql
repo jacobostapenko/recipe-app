@@ -1,5 +1,4 @@
-create database recipes;
-\c recipes
+\c master
 
 
 Create table recipe(
