@@ -1,5 +1,5 @@
 create database recipes;
-/c recipes
+\c recipes
 
 
 Create table recipe(
