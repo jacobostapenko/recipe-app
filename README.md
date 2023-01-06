@@ -3,6 +3,7 @@ download files
 to launch:
 1. cd to app dir
 2. run in console: $ python ./manage.py runserver
+
 itll run locally
 
 admin user creds:
