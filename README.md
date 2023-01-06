@@ -16,6 +16,6 @@ to populate db, for now manually add stuff in through admin or through shell
 
 from recipes.models import Recipes
 
-p = Recipes(author='Dom V.', title = 'Meatballs', description = 'Combine ingredients, form into balls, brown, then place in oven')
+p = Recipe(author='Dom V.', title = 'Meatballs', description = 'Combine ingredients, form into balls, brown, then place in oven')
 
 p.save()
