@@ -1,3 +1,4 @@
+create database master
 \c master
 
 
