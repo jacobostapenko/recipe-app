@@ -1,3 +1,7 @@
+create database recipes;
+/c recipes
+
+
 Create table recipe(
     recipe_id int Primary key
     name varchar(255) not null
