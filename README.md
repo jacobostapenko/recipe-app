@@ -22,6 +22,11 @@ You can check if the install was successful using `django-admin --version` and 3
 You can simply run `pip install XXX` where `XXX` is the package you want to use. Next, run
  `diff -u requirements.txt <(pip freeze)` and see what has changed in the file and make those updates
 
+## Setup DB
+
+TODO: write out DB instructions to install postgres
+
+
 
 to launch:
 1. cd to app dir
