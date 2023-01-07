@@ -24,8 +24,21 @@ You can simply run `pip install XXX` where `XXX` is the package you want to use.
 
 ## Setup DB
 
-TODO: write out DB instructions to install postgres
+Install Postgres 14 from here: https://www.postgresql.org/download/
+Run Postgress and click on the default DB created for you. This should open a Terminal shell. Run the commands below to
+create the DB needed
 
+```CREATE DATABASE recipes;```
+
+```
+CREATE USER admin WITH PASSWORD 'password';
+ALTER ROLE admin SET client_encoding TO 'utf8';
+ALTER ROLE admin SET timezone TO 'UTC';
+```
+and then leave via `exit`.
+
+## Accessing the Admin Console
+TODO: add this info and create mock data for DB
 
 
 to launch:
