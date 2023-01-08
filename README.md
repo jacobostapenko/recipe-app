@@ -1,5 +1,5 @@
 
-clone project via:
+## Clone project:
 
 ```git clone https://github.com/jacobostapenko/recipe-app.git```
 
@@ -18,6 +18,29 @@ install the dependencies needed via `pip3.8 install -r requirements.txt`
 
 You can check if the install was successful using `django-admin --version` and 3.2 should appear.
 
+## To Update `Requirements.txt`:
+You can simply run `pip install XXX` where `XXX` is the package you want to use. Next, run
+ `diff -u requirements.txt <(pip freeze)` and see what has changed in the file and make those updates
+
+## Setup DB
+
+Install Postgres 14 from here: https://www.postgresql.org/download/
+Run Postgress and click on the default DB created for you. This should open a Terminal shell. Run the commands below to
+create the DB needed
+
+```CREATE DATABASE recipes;```
+
+```
+CREATE USER admin WITH PASSWORD 'password';
+ALTER ROLE admin SET client_encoding TO 'utf8';
+ALTER ROLE admin SET timezone TO 'UTC';
+```
+and then leave via `exit`.
+
+## Accessing the Admin Console
+TODO: add this info and create mock data for DB
+
+
 to launch:
 1. cd to app dir
 2. run in console: $ python ./manage.py runserver
@@ -31,3 +54,5 @@ to create user, either go into the django admin or add in shell using .create_us
 
 
 to populate db, for now manually add stuff in through admin 
+
+
