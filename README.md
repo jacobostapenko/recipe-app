@@ -28,6 +28,12 @@ Install Postgres 14 from here: https://www.postgresql.org/download/
 Run Postgress and click on the default DB created for you. This should open a Terminal shell. Run the commands below to
 create the DB needed
 
+To add psql to the path of the virtual environment, run the following commands(for regular installation of postgreSQL):
+
+export PATH="/Library/PostgreSQL/15/bin:$PATH  
+
+make sure to change version(number after PostgreSQL/) if your postgres version is different
+
 ```CREATE DATABASE recipes;```
 
 ```
@@ -36,6 +42,17 @@ ALTER ROLE admin SET client_encoding TO 'utf8';
 ALTER ROLE admin SET timezone TO 'UTC';
 ```
 and then leave via `exit`.
+
+
+
+To udpate db / migrate before you run the server:
+
+open up a shell, and go into your virtual environment. Change directories to end up in the recipe-app dir. Run the commands below:
+
+./manage.py makemigration
+
+./manage.py migrate
+
 
 ## Accessing the Admin Console
 TODO: add this info and create mock data for DB
@@ -48,7 +65,7 @@ to launch:
 itll run locally
 
 admin user creds:
-username: user1 password: 123
+username: user1 password: password
 
 to create user, either go into the django admin or add in shell using .create_user(username, password='_ex_')
 
