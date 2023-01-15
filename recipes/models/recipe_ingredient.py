@@ -10,7 +10,7 @@ class RecipeIngredient(models.Model):
     unit = models.CharField(max_length=50, blank=True, null=True)  # pounds, lbs, oz ,grams, etc
 
     def __str__(self):
-        return str(self.ingredient) + ' ' + str(self.amount)
+        return str(self.recipe) + ' ' + str(self.ingredient)
 
     class Meta:
         db_table = 'recipeingredient'
