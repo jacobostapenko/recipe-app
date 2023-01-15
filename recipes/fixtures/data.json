@@ -61,7 +61,7 @@
         "recipe": 1,
         "ingredient": 1,
         "amount":2.0,
-        "unit":"tablespoons",
+        "unit":"tablespoons"
     }
 }
 ]
