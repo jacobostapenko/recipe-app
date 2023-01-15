@@ -59,7 +59,8 @@
     "pk": 1,
     "fields": {
         "recipe": 1,
-        "ingredient": 1
+        "ingredient": 1,
+        "amount":2.0
     }
 }
 ]

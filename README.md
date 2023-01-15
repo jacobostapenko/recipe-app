@@ -30,7 +30,7 @@ create the DB needed
 
 To add psql to the path of the virtual environment, run the following commands(for regular installation of postgreSQL):
 
-export PATH="/Library/PostgreSQL/15/bin:$PATH  
+export PATH="/Library/PostgreSQL/14/bin:$PATH"
 
 make sure to change version(number after PostgreSQL/) if your postgres version is different
 
