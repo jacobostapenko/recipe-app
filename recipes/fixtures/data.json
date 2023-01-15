@@ -54,6 +54,16 @@
         "category": "protein",
         "created_at": "2023-01-10T15:26:45.341Z",
         "updated_at": "2023-01-10T15:26:45.341Z"
+    },
+},
+{
+    "model": "recipes.recipeingredient",
+    "pk": 1,
+    "fields": {
+        "recipe": 1,
+        "ingredient": 1,
+        "amount":2.0,
+        "unit":"tablespoons"
     }
 }
 ]
