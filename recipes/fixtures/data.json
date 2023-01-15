@@ -7,7 +7,8 @@
         "description": "pan sear chicken breast on pan, 2 min each side. make sure pan is hot when putting chicken on. \r\n\r\nrecommended spices: salt, pepper, paprika, curry, red pepper flakes",
         "author": 1,
         "created_at": "2023-01-10T15:25:47.602Z",
-        "updated_at": "2023-01-10T15:25:47.602Z"
+        "updated_at": "2023-01-15T22:05:27.519Z",
+        "url": "https://themodernproper.com/marry-me-chicken"
     }
 },
 {
@@ -18,7 +19,8 @@
         "description": "throw oil or butter on a pan and let the pan heat up on medium/high heat. once hot, crack eggs on top and let them catch. salt and pepper up top. \r\n\r\n take off after 1-2 minutes if you want runny eggs and 3-4 if you want bad eggs.",
         "author": 1,
         "created_at": "2023-01-10T19:25:47.602Z",
-        "updated_at": "2023-01-10T19:25:47.602Z"
+        "updated_at": "2023-01-15T22:05:42.762Z",
+        "url": "https://www.foodnetwork.com/recipes/jeff-mauro/perfect-sunny-side-up-eggs-3672187"
     }
 },
 {
@@ -37,7 +39,7 @@
     "pk": 2,
     "fields": {
         "name": "eggs",
-        "cost": "2.5",
+        "cost": "2.50",
         "category": "protein",
         "created_at": "2023-01-10T15:26:45.341Z",
         "updated_at": "2023-01-10T15:26:45.341Z"
@@ -48,20 +50,10 @@
     "pk": 3,
     "fields": {
         "name": "chicken breasts",
-        "cost": "5",
+        "cost": "5.00",
         "category": "protein",
         "created_at": "2023-01-10T15:26:45.341Z",
         "updated_at": "2023-01-10T15:26:45.341Z"
-    }
-},
-{
-    "model": "recipes.recipeingredient",
-    "pk": 1,
-    "fields": {
-        "recipe": 1,
-        "ingredient": 1,
-        "amount":2.0,
-        "unit":"tablespoons",
     }
 }
 ]
