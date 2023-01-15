@@ -55,7 +55,7 @@
     }
 },
 {
-    "model": "recipes.ingredientamount",
+    "model": "recipes.recipeingredient",
     "pk": 1,
     "fields": {
         "recipe": 1,
