@@ -6,10 +6,17 @@ from . import models
 # Create your views here.
 def home(request):
     recipes = models.Recipe.objects.all()
-    
+    reviews = models.review.objects.all().last()
     context = {
-        'recipes':recipes
+        'recipes':recipes,
+        'reviews':reviews
     }
+    if request.method == 'POST':
+        if request.POST.get('review'):
+            post=models.review()
+            post.message= request.POST.get('review')
+            post.save()
+
     return render(request, 'recipes/home.html', context)#HttpResponse('<h1> welcome to app</h1>')
 
 def about(request):

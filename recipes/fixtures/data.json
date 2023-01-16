@@ -63,5 +63,15 @@
         "amount":2.0,
         "unit":"tablespoons"
     }
+},
+{
+    "model": "recipes.review",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "message": "very good recipe",
+        "created_at": "2023-01-10T15:26:45.341Z",
+        "updated_at": "2023-01-10T15:26:45.341Z"
+    }
 }
 ]

@@ -7,11 +7,25 @@
   <div class="card-body">
     <h5 class="card-title">{{ recipe.title }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">{{ recipe.author }}</h6>
-    <p class="card-text">{{ recipe.content }}</p>
+ <!--   <p class="card-text">{{ recipe.description }}</p>-->
     <h6 class="card-subtitle mb-2 text-muted">{{ recipe.date_posted }}</h6>
     <a href="{% url 'recipe' %} "> View Recipe</a>
+    {% for review in reviews %}
+      {% if recipe == review.recipe %}
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="list">
+              Top Comment:
+              <div class = "card-paragraph"> "{{ review.message }}" </div>
+                your review: <input type="text" name="review" placeholder="submit message">
+                <input type="submit" value="Post"/>
+            </div>
+        </form>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 {% endfor %}
-<!-- -->
+<!-- either try adding a function into home that does the message for each rectangle. 
+  could also try exting it into a seperate file but idk how that would connect to each rectangle-->
 {% endblock content %}
