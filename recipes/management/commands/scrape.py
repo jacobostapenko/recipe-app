@@ -58,8 +58,13 @@ class Command(BaseCommand):
             print("parsed",recipe)
             print("title", title)
             author = User.objects.first()
-            recipe_object = Recipe(url=recipe, title =recipe_scraped.title(), author = author)
-            recipe_object.save()
+            #TODO: dont recreate recipes
+            if not Recipe.objects.filter(title=title).exists():
+                Recipe(url=recipe, title =title, author = author).save()
+            else:
+                print("already have recipe " + title + "in the db")
+                continue
+            recipe_object = Recipe.objects.get(url=recipe)
             print(ingredient_map)
             for i, v in ingredient_map.items():
                 print(i)
