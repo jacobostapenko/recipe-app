@@ -55,21 +55,13 @@ open up a shell, and go into your virtual environment. Change directories to end
 
 
 ## Accessing the Admin Console
-TODO: add this info and create mock data for DB
+Create a superuser for you to access the admin portal using `./manage.py createsuperuser`.
+
+Run the webserver using `./manage.py runserver`. Navigate to http://localhost:8000/admin and use your login creds from above
 
 
-to launch:
-1. cd to app dir
-2. run in console: $ python ./manage.py runserver
-
-itll run locally
-
-admin user creds:
-username: user1 password: password
-
-to create user, either go into the django admin or add in shell using .create_user(username, password='_ex_')
-
-
-to populate db, for now manually add stuff in through admin 
+## Populate DB
+To populate DB with real recipes, run `./manage.py scrape`. Today we only have the hard-coded
+Hello Fresh recipes but we will add different recipe providers in the future
 
 

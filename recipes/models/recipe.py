@@ -4,11 +4,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Recipe(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=512)
     description = models.TextField()
 
     # author points to user that created it. if user is deleted, all recipes of that user also deleted
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     # just to keep track of when stuff was created. just good practice
     created_at = models.DateTimeField(auto_now_add=True)
